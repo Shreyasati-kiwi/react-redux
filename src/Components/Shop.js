@@ -8,10 +8,13 @@ function Shop() {
   const actions = bindActionCreators(actionCreators,dispatch);
   return (
     <div>
-        <h2>Buy Adidas Shoes 5000rs</h2>
+      <center>
+      <h2>Buy Adidas Shoes 5000rs</h2>
         <button className='btn btn-primary mx-2' onClick={()=>{actions.withdrawMoney(100)}}>-</button>
          Add this item to cart
         <button className='btn btn-primary mx-2' onClick={()=>{actions.depositMoney(100)}}>+</button>
+      </center>
+      
        
     </div>
   )
